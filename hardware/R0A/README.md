@@ -7,5 +7,5 @@ If you want to manufacture the hardware by yourself, please use R01 version or d
 
 Known Issues:
 
-- 1.SDC2 assigned on fault GPIO port, need to remap to PC port.
+- 1.SDC2 assigned on fault GPIO port, need to remap to PC port or CPU can't boot from SD card.
 - 2.I2C operating to AXP209 failed(hardware and software double checked, reason still unkown). And CPU runs at only 400MHz due to core voltage can't be modified. 
