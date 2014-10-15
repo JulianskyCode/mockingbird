@@ -8,4 +8,5 @@ If you want to manufacture the hardware by yourself, please use R01 version or d
 Known Issues:
 
 - 1.SDC2 assigned on fault GPIO port, need to remap to PC port or CPU can't boot from SD card.
-- 2.I2C operating to AXP209 failed(hardware and software double checked, reason still unkown). And CPU runs at only 400MHz due to core voltage can't be modified. 
+- 2.AXP209 need to control 3.3V power rail by using an EXTEN signal. If 3.3V is up without control, AXP209 I2C interface won't work(WHAT THE...!) and the processor can only work at 400MHz due to fiexed core voltage. So need to cut the wire connected to PIN1 of 3.3V SY8009 and fly it to EXTEN of AXP209. Then processor runs at 1GHz now :).
+- 3.Wrong PCB footprint of SPI flash. May need some mechanical work to solder it.
