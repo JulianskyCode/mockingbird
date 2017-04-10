@@ -16,6 +16,6 @@ Figure:
  - RTC with battery
  - extendable I/Os including UART, I2C, SPI, SDIO, PWM, ADC...
 
-#New Plan
+# New Plan
 
 Want to make a small size version within $15 cost per board!
